@@ -1,0 +1,845 @@
+* { margin: 0px; padding: 0px; }
+body, a { font-size: 12px;  color: #555;  font-family: "微软黑体";}
+ul { list-style: none; }
+img, a { border: none; }
+a { text-decoration: none; }
+.cf:after {
+    content: " ";
+    height: 0px;
+    display: block;
+    clear: both;
+}
+.zbox-shadow {
+    -webkit-box-shadow: 0 2px 2px rgba(0,0,0,0.07);
+    -moz-box-shadow: 0 2px 2px rgba(0,0,0,0.07);
+    box-shadow: 0 2px 2px rgba(0,0,0,0.07);
+}
+
+/*头部*/
+.header {
+    padding: 10px 0px 10px 0px;
+    background: rgba(1, 1, 1, 0);
+}
+.header-left, .header-font {
+    float: left;
+}
+.header-font {
+    margin: 0 0 0 10px;
+}
+.header-color {
+    font-weight: bold;
+    color:#badc00;
+}
+.header-limage {
+    float: left;
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin-top: -3px;
+    background-image: url(./../images/sun.png);
+}
+.header-a {
+    margin: 0 0 0 20px;
+    text-decoration: underline;
+}
+.header-right {
+    float: right;
+}
+.header-right-a {
+    margin: 0 20px 0 0;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.h-special {
+    display: inline-block;
+    font-weight: normal;
+}
+.header-right-product {
+    background-color: #38f;
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+}
+
+/*logo*/
+.baidu-logo {
+    width: 640px;
+    margin: auto;
+    text-align: center;
+}
+.baidu-search, .baidu-sborder, .baidu-logo {
+    position: relative;
+}
+.baidu-sborder {
+    width: 640px;
+    height: 40px;
+    margin: auto;
+    text-align: left;
+}
+.baidu-input {
+    width: 490px;
+    height: 35px;
+    padding-left: 10px;
+    line-height: 35px;/*IE8*/
+    border: 1px solid #a9a9a9;
+}
+.baidu-camera, .baidu-button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.baidu-camera {
+    top: -3px;
+    right: 40px;
+    width: 18px;
+    height: 16px;
+    vertical-align: middle;
+    background: url(./../images/camera.png) no-repeat;
+}
+.baidu-camera:hover {
+    background-position: 0 -20px;
+}
+.baidu-button {
+    right: 30px;
+    height: 37px;
+    width: 100px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 16px;
+    background: #38f;
+}
+.camra-btn-img {
+    display: inline-block;
+    width: 18px;
+    height: 16px;
+    vertical-align: middle;
+    background: url(./../images/camera_layer.png) no-repeat;
+}
+.baidu-news {
+    margin-top: 60px;    
+}
+.baidu-news-nav {
+    position: relative;
+    margin: auto;
+    width: 893px;
+}
+#nav-active {
+    font-weight: bolder;
+    color: white;
+    background-color: #9ea0a5;
+}
+.news-nav li {
+    position: relative; 
+    float: left;
+    font-size: 14px;
+    padding: 10px 30px 10px 30px;
+    cursor: pointer;
+}
+.baidu-my-icon {
+    position: absolute;
+    display: block;
+    left: 10px;
+    width: 20px;
+    height: 18px;
+    background: url(./../images/my-icon.png) no-repeat  -15px 0;
+}
+.news-nav li:hover {
+    color: white;
+    font-weight: bold;
+    background-color: #b3b6bb;
+}
+.news-nav li:hover .baidu-my-icon {
+    background-position: -145px 0;
+}
+.baidu-setting {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 18px;
+    height: 18px;
+    background: url(./../images/my-icon.png) no-repeat  -121px -49px;
+    cursor: pointer;
+}
+.baidu-setting:hover {
+    background-position: -121px -73px;
+}
+.baidu-news-about, .baidu-news-left {
+    position: relative;
+}
+.baidu-news-left {
+    width: 590px;
+    left: 0px;
+}
+.baidu-news-recommend {
+    padding: 20px;
+}
+.news-rec-icon, .news-line {
+    display: inline-block;
+    vertical-align: middle;
+}
+.news-rec-icon {
+    margin-right: 5px;
+    height: 14px;
+    width: 12px;
+    background: url(./../images/tips-icon.png) no-repeat -45px -1px;
+}
+.news-line {
+    width: 172px;
+}
+.baidu-new-table {
+    margin-left: 20px;
+    padding: 10px 0px 10px 0px;
+    width: 550px;
+}
+.baidu-new-table a {
+    display: block;
+    padding: 10px 0px 10px 0px;
+    font-size: 20px;
+    color: black;
+    font-weight: bolder;
+}
+.baidu-new-table a:hover {
+    color: #38f;
+    text-decoration: underline;
+}
+.baidu-new-table img {
+    margin: -2px;
+}
+.baidu-news-font {
+    padding-left: 10px;
+}
+.baidu-news-right {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 300px;
+}
+.baidu-news-rtop {
+    margin-top: 20px;
+}
+.baidu-news-hot {
+    font-size: 14px;
+    font-weight: bold;
+}
+.baidu-news-change {
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.news-change-icon {
+    display: inline-block;
+    width: 20px;
+    height: 16px;
+    vertical-align: middle;
+    background: url(./../images/tips-icon.png) no-repeat -23px -25px;
+}
+.baidu-news-change:hover {
+    color: #38f;
+} 
+.baidu-news-change:hover .news-change-icon {
+    background-position: -23px -42px;
+}
+.baidu-news-rtop-list {
+    margin: 20px 0px 0px 0px;
+}
+.news-rlist-ul {
+    float: left;
+    width: 300px;
+}
+.news-rlist-ul li {
+    display: inline-block;
+    width: 140px;
+    line-height: 30px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow:hidden;
+}
+.news-rlist-ul a {
+    font-size: 14px;
+}
+.news-rlist-ul > li > a:hover {
+    text-decoration: underline;
+    color: #38f;
+}
+
+/*隐藏部分*/
+.baidu-search-fix {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    width: 100%;
+    padding: 20px 0 20px 0;
+    background-color: rgba(249, 247, 247, 0.9);
+    /*IE8*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#E5f3efef",endColorstr="#E5f3efef");
+}
+.hot-fixed {
+    position: fixed;
+    top: 90px;
+}
+.more-products {
+    position: absolute;
+    right: 0px;
+    top: 30px;
+    z-index: 1;
+    width: 88px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+.more-products a {
+    margin: auto;
+    display: block;
+    width: 60px;
+    padding: 15px 0px 15px 0px;
+    cursor: pointer;
+}
+.header-other-setting {
+    position: absolute;
+    right: 135px;
+    top: 19px;
+    z-index: 1;
+}
+.header-setting-item {
+    line-height: 20px;
+    /*background: white;*/
+    border: 1px solid #eae2e2;
+}
+.header-setting-item li {
+    padding: 3px 10px 3px 10px;
+}
+.header-setting-item li:hover {
+    color: white;
+    background-color: #38f;
+}
+.header-setting-item a {
+    text-decoration: none;
+}
+.setting-tra {
+  margin: 10px 0px 0px 25px;
+  width:0px;
+  height:0px;
+  font-size:0px;
+  line-height:0px;
+  border-left:5px solid transparent;  /* 右透明 */
+  border-right:5px solid transparent; /*右透明 */
+  border-bottom:5px solid #eae2e2; /* 定义底部颜色 */
+}
+.header-notice {
+    position: absolute;
+    left: 100px;
+    top: 35px;
+    z-index: 1;
+    height: 129px;
+    width: 270px;
+    text-align: center;
+    background-color: white;
+}
+.notice-tra {
+     margin: -5px 140px 0px;
+}
+.header-no-msg {
+    margin: auto;
+    height: 78px;
+    width: 240px;
+    line-height: 78px;
+}
+.header-no-btn {
+    margin-top: 15px;
+}
+.no-btn {
+    display: inline-block;
+    padding: 5px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+}
+.clear-btn {
+    background-color: #b3b6bb;
+} 
+.set-btn {
+    background-color: #38f
+}
+.clear-btn-bg, .set-btn-bg {
+    display: inline-block;
+    width: 12px;
+    height: 10px;
+    vertical-align: middle;
+    background: url(./../images/msg-icon.png) no-repeat;
+}
+.clear-btn-bg {
+    background-position: 0 0;
+}
+.set-btn-bg {
+    background-position: -15px 0;
+}
+.header-skin {
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 280px;
+    background-color: white;
+}
+.header-skin-nav {
+    width: 910px;
+    margin: auto;
+}
+.skin-nav-li, .skin-bg-opacity,.skin-bg-no {
+    float: left;
+    padding: 15px 10px 10px 10px;
+    cursor: pointer;
+}
+.skin-active, .skin-nav-li:hover {
+    color: white;
+    background-color: #38f;
+}
+.skin-bg-opacity,.skin-bg-no {
+    margin-left: 20px;
+}
+.skin-bg-strip {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 4px;
+    border-top: 1px solid #e1e1e1;
+    background-color: #f2f2f2;
+}
+.skin-bg-square {
+    position: absolute;
+    display: inline-block;
+    top: -5px;
+    width: 12px;
+    height: 12px;
+    left: 14px;
+    border: 1px solid #d4d4d4;
+    background-color: #fff;
+}
+.skin-bg-text {
+    position: absolute;
+    top: -16px;
+    left: -8px;
+    display: block;
+    width: 28px;
+    height: 14px;
+    line-height: 14px;
+    text-align: center;
+    cursor: pointer;
+}
+.skin-bg-no-bg {
+    display: inline-block;
+    width: 14px;
+    height: 13px;
+    vertical-align: middle;
+    background: url(./../images/skin-icon.png) no-repeat -24px -176px;
+}
+.skin-bg-no:hover {
+    color: #38f;
+}
+.skin-bg-no:hover .skin-bg-no-bg {
+    background-position: -24px -192px;
+}
+.skin-close-li {
+    padding: 10px;
+    float: right;
+    color: #38f;
+    cursor: pointer;
+}
+.skin-close-bg {
+    display: inline-block;
+    width: 11px;
+    height: 15px;
+    vertical-align: middle;
+    background: url(./../images/skin-icon.png) no-repeat -44px -175px;
+}
+.header-skin-img {
+    margin-top: 20px;
+} 
+.header-skin-img-left, .header-skin-self-left {
+    float: left;
+}
+.header-skin-ul {
+    position: relative;
+    width: 587px;
+    height: 179px;
+}
+.header-skin-ul li {
+    display: inline-block;
+} 
+.skin-img-nav > ul {
+    margin: auto;
+    width: 150px;
+    padding-top: 10px;
+}
+.skin-img-nav > ul > li {
+    float: left;
+    margin-left: 8px;
+    height: 25px;
+    width: 15px;
+    cursor: pointer;
+} 
+.img-nav-pre {
+    background: url(./../images/skin-icon.png) no-repeat 0 -55px;
+}
+.img-nav-active {
+    background: url(./../images/skin-icon.png) no-repeat 0 -12px;
+}
+.img-nav-center {
+    background: url(./../images/skin-icon.png) no-repeat -10px -12px;
+}
+.img-nav-next {
+    background: url(./../images/skin-icon.png) no-repeat 0 -33px;
+}
+.img-nav-next:hover, .img-nav-pre:hover {
+    background-color: #d0d3d8;
+}
+.skin-li-position {
+    position: absolute;
+}
+.skin-img-0, .skin-img-6 {
+    width: 195px;
+    height: 119px;
+    line-height: 119px;
+    cursor: pointer;
+}
+.skin-img-1, .skin-img-2, .skin-img-3, .skin-img-4, .skin-img-5, .skin-img-7, .skin-img-8, .skin-img-9, .skin-img-10, .skin-img-11 {
+    width: 97px;
+    height: 59px;
+    line-height: 59px;
+    cursor: pointer;
+}
+.ipos-0 {
+    top: 0px;
+    left: 0px;
+}
+.ipos-1 {
+    top: 0px;
+    left: 196px;
+}
+.ipos-2 {
+    top:0px;
+    left: 294px;
+}
+.ipos-3 {
+    top: 0px;
+    left: 392px;
+}
+.ipos-4 {
+    top: 0px;
+    left: 490px;
+}
+.ipos-5 {
+    top: 60px;
+    left: 196px;
+}
+.ipos-6 {
+    top: 60px;
+    left: 294px;
+}
+.ipos-7 {
+    top: 60px;
+    left: 490px;
+}
+.ipos-8 {
+    top: 120px;
+    left: 0px;
+}
+.ipos-9 {
+    top: 120px;
+    left: 98px;
+}
+.ipos-10 {
+    top: 120px;
+    left: 196px;
+}
+.ipos-11 {
+    top: 120px;
+    left: 490px;
+}
+
+.header-skin-result {
+    position: relative;
+    float: right;
+    width: 294px;
+    text-align: center;
+}
+.skin-result-show img {
+    width: 262px;
+    height: 180px;
+}
+.skin-result-part {
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    width: 270px;
+    height: 180px;
+    background: url(./../images/baidu-result.png) no-repeat -545px 0px;
+}
+.skin-img-msg {
+    margin-top: -20px;
+}
+.skin-img-msg > ul > li {
+    float: left;
+    padding: 10px 5px;
+    cursor: pointer;
+}
+.skin-img-msg > ul > li:hover, .skin-image-active {
+    color: #38f;
+}
+.header-skin-change {
+    padding: 5px 0px;
+}
+.skin-change-left {
+    cursor: pointer;
+}
+.skin-change-checkbox {
+    display: inline-block;
+    margin-right: 5px;
+    width: 12px;
+    height: 12px;
+    vertical-align: middle;
+    border: 1px solid #bdb4b4;
+}
+#b-skin-random-bg {
+    background: url(./../images/skin-random-icon.png) no-repeat 2px 3px;
+}
+.skin-change-left:hover {
+    color: #38f;
+}
+.skin-change-left:hover .skin-change-checkbox, #b-skin-random-bg {
+    border: 1px solid #38f;
+}
+.skin-change-right {
+    float: right;
+    color: #38f;
+}
+.skin-upload-img {
+    float: left;
+    width: 315px;
+    height: 180px;
+    border: 1px solid #e0e0e0;
+    background: #fafafa;
+}
+.skin-upload-set {
+    float: left;
+    margin-left: 20px;
+}
+.skin-upload-again {
+    width: 90px;
+    height: 29px;
+    background: url(./../images/skin-icon.png) no-repeat 0px -120px;
+    cursor: pointer;
+}
+.skin-dark-bg, .skin-light-bg {
+    display: inline-block;
+    width: 67px;
+    height: 25px;
+    margin: 8px 0 0 0;
+    vertical-align: bottom;
+    background: url(./../images/skin-logo-icon.png) no-repeat
+}
+.skin-dark-bg {
+    background-position: 0px 0px;
+}
+.skin-light-bg {
+    background-position: -70px 0px;
+}
+.skin-bg-define {
+    margin-top: 20px;
+}
+.skin-bg-use, .skin-bg-cancel {
+    width: 54px;
+    height: 29px;
+    display: inline-block;
+    margin-left: 10px;
+    background: url(./../images/skin-icon.png) no-repeat;
+    cursor: pointer;
+}
+.skin-bg-use {
+    background-position: -320px -82px;
+}
+.skin-bg-cancel {
+    background-position: -100px -120px;
+}
+.skin-recent-use-table {
+    width: 100%;
+}
+.skin-recent-use-table td, .skin-recent-use-table td img {
+    height: 59px;
+    width: 97px;
+}
+.skin-recent-use-table td {
+    border: 1px solid white;
+    background-color: #f5f5f5;
+}
+.baidu-setting-detail {
+    position: absolute;
+    z-index: 1;
+    width: 893px;
+    padding: 20px 0px;
+    font-size: 14px;
+    background-color: #fff;    
+} 
+.setting-top-menu, .setting-bottom {
+    margin: auto;
+    width: 843px;
+}
+.setting-top-menu {
+    padding-bottom: 70px;
+}
+.setting-bottom {
+    text-align: right;
+    margin-top: 20px;
+} 
+.setting-detail-left {
+    float: left;
+    padding-left: 20px;
+    width: 410px;
+}
+.setting-exists-menu, .setting-needadd-menu, .setting-my-follow {
+    margin-top: 15px;
+}
+.setting-exists-menu {
+    display: inline;
+}
+.setting-my-follow, .setting-menu {
+    position: relative;
+    display: inline-block;
+    padding: 5px 10px;
+}
+.setting-bg-left {
+    position: absolute;
+    display: inline-block;
+    top: -8px;
+    left: -5px;
+    width: 15px;
+    height: 15px;
+    background: url(./../images/card_setting_incon.png) no-repeat -40px -25px;
+}
+.setting-menu {
+    margin: 0px 0px 10px 10px;
+    border: 1px dashed #eae2e2;
+    cursor: pointer;
+}
+.setting-menu:hover {
+    border: 1px dashed #38f;
+}
+.setting-menu:hover .setting-bg-left {
+    background-position: -20px -25px;
+}
+.setting-detail-right {
+    float: right;
+    width: 410px;
+}
+.setting-no-menu {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0px 10px 10px 0px;
+    cursor: pointer;
+}
+.setting-bg-right {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    background: url(./../images/card_setting_incon.png) no-repeat -60px -28px;
+}
+.setting-no-menu:hover {
+    color: white;
+    background-color: #38f;
+} 
+.setting-no-menu:hover .setting-bg-right {
+    background-position: -75px -28px;
+}
+.setting-bottom-font {
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+} 
+.setting-hidden, .setting-problem, .setting-choose {
+    display: inline-block;
+    margin-right: 5px;
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+}
+.setting-hidden {
+    background: url(./../images/card_setting_incon.png) no-repeat -128px -25px;
+}
+.setting-problem {
+    background: url(./../images/card_setting_incon.png) no-repeat -147px -24px;
+}
+/*百度camera*/
+.baidu-camera-url {
+    position: absolute;
+    z-index: 3;
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    font-size: 16px;
+    background-color: white;
+    cursor: pointer;
+}
+.camera-url-content {
+    margin: 20px;
+    height: 100px;
+    width: 560px;
+    background-color: #fafafa;
+}
+.camera-url-move {
+    display: block;
+    padding-top: 25px;
+    color: #999;
+}
+.camera-url-add {
+    display: block;
+    margin-left: 270px;
+    width: 28px;
+    height: 28px;
+    background: url(./../images/soutu_icons_sample.png) no-repeat -70px -2px;
+}
+.camera-url-btn {
+    position: relative;
+    margin: 0 auto;
+    width: 158px;
+    height: 43px;
+}
+.camera-url-btn input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer;
+}
+.camera-url-icon, .camera-url-font {
+    position: relative;
+    top: 13px;
+}
+.camera-url-close {
+    text-align: right;
+    padding-bottom: 20px;
+}
+.camera-url-close span, .camera-url-icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url(./../images/soutu_icons_sample.png) no-repeat;
+}
+.camera-url-close span {
+    margin-right: 15px;
+    background-position: -20px 0;
+    cursor: pointer;
+}
+.camera-url-icon {
+    vertical-align: middle;
+    background-position: -144px 0;
+}
+#b-camera-url, #b-camera-btn-img, #b-camera-btn-img-fix, 
+#b-baidu-search-fix, #b-item-products, #setting-person,
+#setting-set, #notice-box, #b-skin-show, #b-skin-self,
+#b-img-msg, #b-skin-change, #b-skin-recent-use, #b-menu-detail
+{
+    display: none;
+}
