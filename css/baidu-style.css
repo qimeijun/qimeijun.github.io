@@ -56,7 +56,7 @@ a { text-decoration: none; }
 }
 .header-right-product {
     background-color: #38f;
-    padding: 10px 20px 10px 20px;
+    padding: 11px 20px 12px 20px;
     cursor: pointer;
 }
 
@@ -127,6 +127,9 @@ a { text-decoration: none; }
     color: white;
     background-color: #9ea0a5;
 }
+.news-nav {
+    border-bottom: 1px solid #eae2e2;
+}
 .news-nav li {
     position: relative; 
     float: left;
@@ -184,11 +187,13 @@ a { text-decoration: none; }
 }
 .news-line {
     width: 172px;
+    border-bottom: 1px solid #eae2e2;
 }
 .baidu-new-table {
     margin-left: 20px;
     padding: 10px 0px 10px 0px;
     width: 550px;
+    border-bottom: 1px solid #eae2e2;
 }
 .baidu-new-table a {
     display: block;
@@ -202,10 +207,10 @@ a { text-decoration: none; }
     text-decoration: underline;
 }
 .baidu-new-table img {
-    margin: -2px;
+    margin-right: 1px;
 }
-.baidu-news-font {
-    padding-left: 10px;
+.baidu-news-img {
+    margin: 5px 0px 8px 0px;
 }
 .baidu-news-right {
     position: absolute;
@@ -678,7 +683,8 @@ a { text-decoration: none; }
     width: 893px;
     padding: 20px 0px;
     font-size: 14px;
-    background-color: #fff;    
+    background-color: #fff;
+    border-bottom: 1px solid #eae2e2;
 } 
 .setting-top-menu, .setting-bottom {
     margin: auto;

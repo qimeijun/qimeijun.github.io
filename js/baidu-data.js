@@ -201,7 +201,7 @@ var skinObj = {
         recent:[]
     },
     img: {
-        hot: ["images/832.jpg", "images/827.jpg", "images/830.jpg", "images/831.jpg", "images/818.jpg", "images/828.jpg", "images/817.jpg", "images/819.jpg", "images/833.jpg", "images/834.jpg", "images/829.jpg", "images/836.jpg"],
+        hot: ["images/832.jpg", "images/827.jpg", "images/830.jpg", "images/831.jpg", "images/844.jpg", "images/828.jpg", "images/817.jpg", "images/845.jpg", "images/833.jpg", "images/834.jpg", "images/829.jpg", "images/836.jpg"],
         game: ["images/660.jpg", "images/660.jpg", "images/660.jpg", "images/660.jpg", "images/660.jpg", "images/660.jpg", "images/660.jpg", "images/660.jpg", "images/660.jpg", "images/660.jpg", "images/660.jpg", "images/660.jpg"],
         cartoon: ["images/523.jpg", "images/523.jpg", "images/523.jpg", "images/523.jpg", "images/523.jpg", "images/523.jpg", "images/523.jpg", "images/523.jpg", "images/523.jpg", "images/523.jpg", "images/523.jpg", "images/523.jpg"],
         goddess: ["images/446.jpg", "images/446.jpg", "images/446.jpg", "images/446.jpg", "images/446.jpg", "images/446.jpg", "images/446.jpg", "images/446.jpg", "images/446.jpg", "images/446.jpg", "images/446.jpg", "images/446.jpg"],
@@ -213,3 +213,62 @@ var skinObj = {
         recent: []
     }
 };
+
+
+// 推荐
+var newsObj = [
+    {
+        title: '美联储终于加息了，中国人生活的大麻烦已经出现了？',
+        time: '新浪网&nbsp;12-19 08:29',
+        img: ['images/baidu-2.jpg'],
+        url: '#'
+    },
+    {
+        title: '美联储终于加息了，中国人生活的大麻烦已经出现了？',
+        time: '新浪网&nbsp;12-19 08:29',
+        img: ['images/baidu-2.jpg', 'images/baidu-2.jpg', 'images/baidu-2.jpg'],
+        url: '#'
+    },
+    {
+        title: '美联储终于加息了，中国人生活的大麻烦已经出现了？',
+        time: '新浪网&nbsp;12-19 08:29',
+        img: [],
+        url: '#'
+    },
+    {
+        title: '美联储终于加息了，中国人生活的大麻烦已经出现了？',
+        time: '新浪网&nbsp;12-19 08:29',
+        img: ['images/baidu-2.jpg', 'images/baidu-2.jpg', 'images/baidu-2.jpg'],
+        url: '#'
+    },
+    {
+        title: '美联储终于加息了，中国人生活的大麻烦已经出现了？',
+        time: '新浪网&nbsp;12-19 08:29',
+        img: ['images/baidu-2.jpg', 'images/baidu-2.jpg', 'images/baidu-2.jpg'],
+        url: '#'
+    },
+    {
+        title: '美联储终于加息了，中国人生活的大麻烦已经出现了？',
+        time: '新浪网&nbsp;12-19 08:29',
+        img: ['images/baidu-2.jpg', 'images/baidu-2.jpg', 'images/baidu-2.jpg'],
+        url: '#'
+    },
+    {
+        title: '美联储终于加息了，中国人生活的大麻烦已经出现了？',
+        time: '新浪网&nbsp;12-19 08:29',
+        img: ['images/baidu-2.jpg', 'images/baidu-2.jpg', 'images/baidu-2.jpg'],
+        url: '#'
+    },
+    {
+        title: '美联储终于加息了，中国人生活的大麻烦已经出现了？',
+        time: '新浪网&nbsp;12-19 08:29',
+        img: ['images/baidu-2.jpg', 'images/baidu-2.jpg', 'images/baidu-2.jpg'],
+        url: '#'
+    },
+    {
+        title: '美联储终于加息了，中国人生活的大麻烦已经出现了？',
+        time: '新浪网&nbsp;12-19 08:29',
+        img: ['images/baidu-2.jpg', 'images/baidu-2.jpg', 'images/baidu-2.jpg'],
+        url: '#'
+    },
+];

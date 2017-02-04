@@ -486,6 +486,7 @@ setAddMenuDOM.onclick = function (e) {
 var cameraBtnDOM = document.getElementById("b-baidu-camera");
 var cameraBtnFixDOM = document.getElementById("b-baidu-camera-fix");
 
+//b-camera-btn-img
 var cameraBtnTextDOM = document.getElementById("b-camera-btn-text");
 var cameraBtnImgDOM = document.getElementById("b-camera-btn-img");
 var cameraBtnTextFixDOM = document.getElementById("b-camera-btn-text-fix");
@@ -496,7 +497,13 @@ cameraBtnDOM.onclick = function () {
     cameraUrlDOM.style.position = "absolute";
     cameraUrlDOM.style.top = "170px";
     cameraUrlDOM.style.display = "block";
-    // 百度一下
+    
+    // 百度一下 更换图片
+    if (document.body.style.background) {
+        cameraBtnImgDOM.style.background = 'url(images/camera_newindex_layer_cc6dffd.png) no-repeat';
+    } else {
+        cameraBtnImgDOM.style.background = 'url(images/camera_layer.png) no-repeat';
+    }
     cameraBtnTextDOM.style.display = "none";
     cameraBtnImgDOM.style.display = "inline-block";
 };
@@ -532,6 +539,33 @@ newsChangeDOM.onclick = function () {
     showNewsHot(start, length);
 }
 
+
+/**
+ *  推荐新闻
+ */
+var newsShowDOM = document.getElementById("b-news-show");
+var showHtml = '';
+for (var i = 0; i < newsObj.length; i++) {
+    showHtml += '<ul class="baidu-new-table cf">';
+    if (newsObj[i].img.length === 1) {
+        showHtml += '<li class="baidu-news-img" style="float: left; margin-right: 20px;">'+
+                        '<img src="'+ newsObj[i].img +'" height="119px" width="175px"/>'+
+                    '</li>'+
+                    '<li><a href="'+ newsObj[i].url +'">'+ newsObj[i].title +'</a></li>';
+    } else if (newsObj[i].img.length > 1) {
+        showHtml += '<li><a href="'+ newsObj[i].url +'">'+ newsObj[i].title +'</a></li>';
+        var showImg = newsObj[i].img;
+        showHtml += '<li class="baidu-news-img">';
+        for (var j = 0; j < showImg.length; j++) {
+            showHtml += '<img src="'+ showImg[j] +'" height="119px" width="175px"/>';
+        }
+        showHtml += '</li>';
+    } else if (newsObj[i].img.length === 0) {
+        showHtml += '<li><a href="'+ newsObj[i].url +'">'+ newsObj[i].title +'</a></li>';
+    }
+    showHtml += '<li>'+ newsObj[i].time +'</li></ul>';
+}
+newsShowDOM.innerHTML = showHtml;
 
 
 /**
