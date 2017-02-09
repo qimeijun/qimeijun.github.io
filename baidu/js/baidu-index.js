@@ -658,7 +658,7 @@ function changeCss(name) {
     var linkDOM = document.getElementsByTagName("link");
     if (linkDOM.length > 0) {
         var cssOld = linkDOM[1].getAttribute("href");
-        var cssNew = "css/"+ name +".css";
+        var cssNew = "css/" +name +".css";
         linkDOM[1].setAttribute("href", cssNew);
     }
 }
